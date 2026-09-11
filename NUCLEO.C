@@ -9,7 +9,7 @@ static PTR_DESC_PROC lista = NULL;
 static unsigned char far *indos;
 static int instalado = 0, iniciou = 0, status = 0;
 
-/* Lista circular dos descritores de processos. */
+
 PTR_DESC_PROC far procura_prox_ativo(void){
   PTR_DESC_PROC p;
   if (!prim)
@@ -63,7 +63,6 @@ void far escalador(void){
   }
 }
 
-/* Mesmo segmento de codigo: requerido pelo newprocess fornecido. */
 static void far executa(void){
   prim->entrada();
   termina_processo();
@@ -125,7 +124,6 @@ int far dispara_sistema(void) {
   return status;
 }
 
-/* Aguarda o timer devolver o controle ao escalador (slide 72). */
 void far termina_processo(void) {
   disable();
   prim->estado = terminado;
@@ -139,19 +137,19 @@ void far inicia_semaforo(semaforo *sem, int n) {
   sem->Q = NULL;
 }
 
-void far P(semaforo *sem) {
+void far P(semaforo *sem){
   PTR_DESC_PROC p, anterior, proximo;
 
   disable();
-  if (sem->s > 0) {
+  if(sem->s > 0){
     --sem->s;
     enable();
     return;
   }
   prim->fila_sem = NULL;
-  if (!sem->Q) {
+  if(!sem->Q){
     sem->Q = prim;
-  } else {
+  }else{
     p = sem->Q;
     while (p->fila_sem)
       p = p->fila_sem;
@@ -160,24 +158,22 @@ void far P(semaforo *sem) {
   prim->estado = bloq_P;
   anterior = prim;
   proximo = procura_prox_ativo();
-  if (!proximo) {
-    /* O timer devolve ao escalador para detectar o deadlock. */
+  if(!proximo){
     enable();
     for (;;)
       ;
   }
   prim = proximo;
   ++trocas;
-  /* SYSTEM.transfer tambem atualiza o destino do iotransfer. */
   transfer(anterior->contexto, proximo->contexto);
   enable();
 }
 
-void far V(semaforo *sem) {
+void far V(semaforo *sem){
   PTR_DESC_PROC p;
 
   disable();
-  if (!sem->Q) {
+  if(!sem->Q){
     ++sem->s;
   } else {
     p = sem->Q;

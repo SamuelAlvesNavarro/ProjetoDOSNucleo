@@ -20,8 +20,6 @@ void far libera(void) {
   V(&sinal);
 }
 
-/* Sem transferencias voluntarias: o segundo processo so pode iniciar
-   quando o timer interromper o primeiro e acionar o escalador. */
 void far processo1(void) {
   while (!conta2) {
     ++conta1;
@@ -34,7 +32,6 @@ void far processo2(void) {
     ++conta2;
   }
   ++conta2;
-  /* O retorno tambem encerra o processo, pela funcao executa do nucleo. */
 }
 
 int main(int argc, char **argv) {
@@ -72,7 +69,6 @@ int main(int argc, char **argv) {
     ++erros;
   }
 
-  /* Saida apos o termino: nao exige sincronizacao da biblioteca C. */
   printf("NUCLEO: %s\n", erros ? "FALHOU" : "OK");
   printf("Processo 1: %lu; Processo 2: %lu; Trocas: %lu\n",
          conta1, conta2, trocas);
