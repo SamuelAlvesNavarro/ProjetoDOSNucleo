@@ -3,7 +3,6 @@ set -eu
 
 pasta_programa=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 if ! command -v dosbox >/dev/null 2>&1; then
-  echo "DOSBox nao encontrado no PATH." >&2
   exit 1
 fi
 if [ "$#" -gt 1 ]; then

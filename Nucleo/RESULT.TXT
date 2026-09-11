@@ -34,3 +34,7 @@ Produtor/consumidor finito: OK N=100 status=0
 Produzidos=1000 consumidos=1000 maximo=100 final=0 falhas=0
 Produtor/consumidor continuo: OK N=100 status=0
 Produzidos=70400 consumidos=70400 maximo=100 final=0 falhas=0
+Produtor/consumidor continuo: OK N=100 status=0
+Produzidos=12205 consumidos=12205 maximo=100 final=0 falhas=0
+Produtor/consumidor continuo: OK N=100 status=0
+Produzidos=12514 consumidos=12514 maximo=100 final=0 falhas=0

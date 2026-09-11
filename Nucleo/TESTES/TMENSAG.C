@@ -1,4 +1,4 @@
-#include "../NUCLEO.H"
+#include "NUCLEO.H"
 #include <stdio.h>
 #include <string.h>
 

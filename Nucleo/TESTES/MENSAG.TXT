@@ -1,0 +1,8 @@
+modo=e OK erros=0 retorno=0 enviados=1 recebidos=1 trocas=2
+modo=r OK erros=0 retorno=0 enviados=1 recebidos=1 trocas=2
+modo=f OK erros=0 retorno=0 enviados=3 recebidos=3 trocas=6
+modo=s OK erros=0 retorno=0 enviados=3 recebidos=3 trocas=6
+modo=x OK erros=0 retorno=0 enviados=1 recebidos=1 trocas=4
+modo=d OK erros=0 retorno=1 enviados=0 recebidos=0 trocas=0
+modo=l OK erros=0 retorno=0 enviados=2 recebidos=2 trocas=4
+modo=p OK erros=0 retorno=0 enviados=200 recebidos=200 trocas=401
