@@ -7,13 +7,12 @@ if ! command -v dosbox >/dev/null 2>&1; then
   exit 1
 fi
 if [ "$#" -gt 1 ]; then
-  echo "Uso: $0 [n|s|d|z]" >&2
+  echo "Uso: $0 [v]" >&2
   exit 1
 fi
-modo=${1:-n}
+modo=${1:-p}
 case "$modo" in
-  n|s|d|z) ;;
-  *) echo "Uso: $0 [n|s|d|z]" >&2; exit 1 ;;
+  p|v) ;;
+  *) echo "Uso: $0 [v]" >&2; exit 1 ;;
 esac
-# Monta somente a pasta do programa; funciona de qualquer diretorio Linux.
 exec dosbox -c "mount c \"$pasta_programa\"" -c "c:" -c "rodar $modo"

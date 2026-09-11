@@ -1,0 +1,2 @@
+Produtor/consumidor finito: OK N=100 status=0
+Produzidos=1000 consumidos=1000 maximo=100 final=0 falhas=0

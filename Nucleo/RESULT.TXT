@@ -1,2 +1,36 @@
 NUCLEO n: OK erros=0 status=0 trocas=2 cpu=28079,1
 NUCLEO n: OK erros=0 status=0 trocas=2 cpu=29243,1
+NUCLEO p: OK erros=0 status=0 trocas=39 cpu=0,0
+Produzidos=100 consumidos=100 capacidade=5 maximo=5 final=0 falhas=0
+NUCLEO n: OK erros=0 status=0 trocas=2 cpu=12550,1
+NUCLEO s: OK erros=0 status=0 trocas=4 cpu=0,0
+NUCLEO d: OK erros=0 status=1 trocas=0 cpu=0,0
+NUCLEO z: OK erros=0 status=0 trocas=0 cpu=0,0
+Produtor/consumidor finito: OK N=100 status=0
+Produzidos=1000 consumidos=1000 maximo=100 final=0 falhas=0
+Produtor/consumidor continuo: OK N=100 status=0
+Produzidos=60388 consumidos=60388 maximo=100 final=0 falhas=0
+Produtor/consumidor continuo: OK N=100 status=0
+Produzidos=36402 consumidos=36402 maximo=100 final=0 falhas=0
+Produtor/consumidor finito: OK N=100 status=0
+Produzidos=1000 consumidos=1000 maximo=100 final=0 falhas=0
+Produtor/consumidor finito: OK N=100 status=0
+Produzidos=1000 consumidos=1000 maximo=100 final=0 falhas=0
+Produtor/consumidor finito: OK N=100 status=0
+Produzidos=1000 consumidos=1000 maximo=100 final=0 falhas=0
+Produtor/consumidor finito: OK N=100 status=0
+Produzidos=1000 consumidos=1000 maximo=100 final=0 falhas=0
+Produtor/consumidor finito: OK N=100 status=0
+Produzidos=1000 consumidos=1000 maximo=100 final=0 falhas=0
+Produtor/consumidor finito: OK N=100 status=0
+Produzidos=1000 consumidos=1000 maximo=100 final=0 falhas=0
+Produtor/consumidor finito: OK N=100 status=0
+Produzidos=1000 consumidos=1000 maximo=100 final=0 falhas=0
+Produtor/consumidor finito: OK N=100 status=0
+Produzidos=1000 consumidos=1000 maximo=100 final=0 falhas=0
+Produtor/consumidor finito: OK N=100 status=0
+Produzidos=1000 consumidos=1000 maximo=100 final=0 falhas=0
+Produtor/consumidor finito: OK N=100 status=0
+Produzidos=1000 consumidos=1000 maximo=100 final=0 falhas=0
+Produtor/consumidor continuo: OK N=100 status=0
+Produzidos=70400 consumidos=70400 maximo=100 final=0 falhas=0

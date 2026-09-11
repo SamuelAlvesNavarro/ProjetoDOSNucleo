@@ -1,0 +1,3 @@
+TMENSAG.C (..\NUCLEO.H ..\..\SYSTEM.H)
+..\NUCLEO.C (..\NUCLEO.H ..\..\SYSTEM.H)
+..\..\SYSTEM.OBJ

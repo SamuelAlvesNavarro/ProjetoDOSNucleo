@@ -1,0 +1,12 @@
+modo=t OK erros=0 retorno=0 trocas=2
+cpu=7841,1 fila=0,0 usados=0 contador=0 concluidos=0 segunda=0
+modo=f OK erros=0 retorno=0 trocas=4
+cpu=0,0 fila=1,2 usados=2 contador=0 concluidos=0 segunda=0
+modo=m OK erros=0 retorno=0 trocas=193
+cpu=0,0 fila=0,0 usados=0 contador=200 concluidos=2 segunda=0
+modo=d OK erros=0 retorno=1 trocas=0
+cpu=0,0 fila=0,0 usados=0 contador=0 concluidos=0 segunda=0
+modo=z OK erros=0 retorno=0 trocas=0
+cpu=0,0 fila=0,0 usados=0 contador=0 concluidos=0 segunda=0
+modo=r OK erros=0 retorno=0 trocas=0
+cpu=0,0 fila=0,0 usados=0 contador=0 concluidos=1 segunda=-1
