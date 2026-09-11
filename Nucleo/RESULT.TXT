@@ -1,0 +1,2 @@
+NUCLEO n: OK erros=0 status=0 trocas=2 cpu=28079,1
+NUCLEO n: OK erros=0 status=0 trocas=2 cpu=29243,1
