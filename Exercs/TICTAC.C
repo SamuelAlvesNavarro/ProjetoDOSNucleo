@@ -1,4 +1,4 @@
-#include "System.h"
+#include "../SYSTEM.H"
 #include "conio.h"
 #include "stdio.h"
 
